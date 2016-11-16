@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src'
+    }
+  }
+  test {
+    java {
+      srcDir 'test/src'
+    }
+  }
+}
+
+dependencies{
+	//Trebuie sa specificam pt ce pas sunt dependintele
+	//Pot fi pt. compilare, runtime....
+	//"compile" specifica faptul ca aceste dependinte sunt necesare la compile time
+	compile files ('lib/junit-3.8.1.jar', 'lib/log4j-1.2.8.jar')
+}
+
+task wrapper (type: Wrapper)
+//La linia de comanda trebuie sa rulam apoi: "gradle wrapper" si apoi "gradlew build"
+
+run{
+	if(project.hasProperty('args')){
+		args project.args.split('\\s')
+	}
+}
+//*** Apoi rulam cu comanda: <<>> gradle run -Pagrs="-f build.gradle"-d build.hash"  <<>> 
+
+
+//Numele clasei main folosita pt a rula aplicatia:  
+mainClassName = 'com.pluralsight.security.Hash'

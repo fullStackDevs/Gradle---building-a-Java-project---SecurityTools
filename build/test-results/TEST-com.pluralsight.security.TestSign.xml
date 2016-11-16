@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pluralsight.security.TestSign" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-11-16T15:15:10" hostname="EN62481" time="0.079">
+  <properties/>
+  <testcase name="testCreateSignature" classname="com.pluralsight.security.TestSign" time="0.028"/>
+  <testcase name="testLoadPrivateKey" classname="com.pluralsight.security.TestSign" time="0.005"/>
+  <testcase name="testParseArgsDefaults" classname="com.pluralsight.security.TestSign" time="0.001"/>
+  <testcase name="testParseArgs" classname="com.pluralsight.security.TestSign" time="0.0"/>
+  <testcase name="testLoadKeystore" classname="com.pluralsight.security.TestSign" time="0.007"/>
+  <testcase name="testSignData" classname="com.pluralsight.security.TestSign" time="0.025"/>
+  <testcase name="testVerifyData" classname="com.pluralsight.security.TestSign" time="0.009"/>
+  <testcase name="testLoadPrivateKeyInvalidPassword" classname="com.pluralsight.security.TestSign" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
