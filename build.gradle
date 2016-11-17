@@ -1,6 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+//Structura proiectului nu corespunde cu structura standard la care se asteapta Gradle si de aceea trebuie sa adaugam
+//configurarile de mai jos pt a specifica unde sunt sursele 
 sourceSets {
   main {
     java {
